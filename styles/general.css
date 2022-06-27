@@ -1,0 +1,18 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box; 
+}
+
+:root{
+  font-size:62.5%;
+
+  --almost-white-color: hsl(0, 0%, 98%);
+  --medium-gray-color: hsl(0, 0%, 41%);
+  --almost-black-color: hsl(0, 0%, 8%);
+
+}
+
+body,button{
+  font-family:'Epilogue', sans-serif;
+}
