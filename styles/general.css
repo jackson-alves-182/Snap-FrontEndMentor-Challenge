@@ -13,6 +13,17 @@
 
 }
 
+body{
+  margin:2rem 1rem;
+}
+
 body,button{
   font-family:'Epilogue', sans-serif;
+  background-color:var(--almost-white-color);
 }
+
+header,button{
+  color:var(--medium-gray-color)
+}
+
+
