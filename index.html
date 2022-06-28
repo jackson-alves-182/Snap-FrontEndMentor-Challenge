@@ -17,6 +17,7 @@
 <body>
   <header>
       <img class="logo" src="/images/logo.svg">
+      <img class="menu hide" src="/images/icon-menu.svg">
 
       <div class="header-nav">
         <ul>
@@ -84,7 +85,11 @@
     </section>
 
     <aside>
-      <img src="/images/image-hero-desktop.png">
+      <picture>
+        <source srcset="/images/image-hero-mobile.png" media="(max-width:560px)"/>
+        <source srcset="/images/image-hero-desktop.png" media="(min-width:561px)"/>
+        <img src="/images/image-hero-desktop.png"/>
+      </picture>
     </aside>
   </main> 
 

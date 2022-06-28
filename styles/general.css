@@ -26,4 +26,9 @@ header,button,p{
   color:var(--medium-gray-color)
 }
 
+@media(max-width:560px){
+  body{
+    margin:0;
+  }
+}
 

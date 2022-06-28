@@ -17,7 +17,7 @@ section{
   gap:5rem;
 }
 h1{
-  font-size:clamp(4rem, 8vw, 8rem);
+  font-size:clamp(3.0rem, 8vw, 8rem);
 }
 p{
   max-width:45rem;
@@ -65,8 +65,25 @@ aside img{
 @media(max-width:560px){
   main{
     flex-direction: column-reverse;
+    text-align:center;
   }
-  aside img{
-    src:'/images/image-hero-mobile.png';
+  section {
+    gap:2rem;
+  }
+  section button{
+    margin:0 auto 3rem;
+  }
+  p{
+    margin:auto;
+    max-width:31rem;
+  }
+  .nav-footer{
+    position: static;
+  }
+  .nav-footer img{
+    width:clamp(5rem, 30vw ,6rem);
+  }
+  aside{
+    margin-bottom:2rem;
   }
 }
