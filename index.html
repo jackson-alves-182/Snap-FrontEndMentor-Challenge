@@ -18,18 +18,27 @@
   <script src="js/index.js" type="module"></script>
   <header>
       <img class="logo" src="/images/logo.svg">
-      <img class="menu hide" src="/images/icon-menu.svg">
+
+      <img class="menu-img hide" src="/images/icon-menu.svg">
+      <div class="menu hide">
+        <img src="/images/icon-close-menu.svg">
+      </div> 
 
       <div class="header-nav">
         <ul>
           <li class="feature-arrow">
             Features
-             <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+             <svg class="feat-down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
               <path stroke="var(--medium-gray-color)" 
               stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
             </svg>
 
-            <div class="feat-navigation hide">
+            <svg class="feat-up-arrow hide" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="#686868" stroke-width="1.5"
+              fill="none" d="m1 5 4-4 4 4"/>
+            </svg>
+
+            <div class="feat-navigation hide ">
               <ul>
                 <li><img src="/images/icon-todo.svg">Todo List</li>
                 <li><img src="/images/icon-calendar.svg">Calendar</li>
@@ -42,10 +51,16 @@
 
           <li class="company-arrow">
             Company
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <svg class="comp-down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
               <path stroke="var(--medium-gray-color)" stroke-width="1.5" 
               fill="none" d="m1 1 4 4 4-4"/>
             </svg>
+
+            <svg class="comp-up-arrow hide" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="#686868" stroke-width="1.5"
+              fill="none" d="m1 5 4-4 4 4"/>
+            </svg>
+            
 
             <div class="comp-navigation hide" >
               <ul>
