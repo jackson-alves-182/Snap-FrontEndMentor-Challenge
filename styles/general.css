@@ -22,7 +22,7 @@ body,button{
   background-color:var(--almost-white-color);
 }
 
-header,button{
+header,button,p{
   color:var(--medium-gray-color)
 }
 
