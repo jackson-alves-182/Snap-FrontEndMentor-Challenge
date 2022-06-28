@@ -1,6 +1,6 @@
 header,
 .header-nav,
-.header-nav ul,
+.header-nav > ul,
 .user-log{
   display:flex;
   align-items:center;
@@ -8,6 +8,7 @@ header,
 }
 
 header{
+
   max-width:1440px;
   height:3rem;
 
@@ -36,6 +37,42 @@ header .logo{
   cursor:pointer;
   color:var(--almost-black-color);
 }
+.header-nav ul li:nth-child(1){
+  position:relative;
+}
+.header-nav ul li:nth-child(1):hover > .feat-navigation{
+  display:flex;
+}
+
+.feat-navigation{
+  position:absolute;
+  left:-3rem;
+  top:2.5rem;
+
+  background:#FFFFFF;
+  padding:2.4rem 2.5rem;
+
+  border-radius:1rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.199);
+}
+.feat-navigation ul{
+  display:grid;
+
+  align-items:center;
+
+  gap:1.2rem;
+}
+.feat-navigation ul li{
+  display:flex;
+
+  align-items:center;
+}
+.feat-navigation ul img{
+  margin-right:1rem;
+  width:12px;
+}
+
+
 .header-nav ul svg{
   margin-left:2px;
 }
@@ -56,6 +93,9 @@ header .logo{
 .user-log button:nth-child(2):hover{
   border:1px solid var(--almost-black-color);
 }
+
+
+
 
 .hide{
   display:none;
