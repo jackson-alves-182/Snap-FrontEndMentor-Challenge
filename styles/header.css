@@ -8,7 +8,6 @@ header,
 }
 
 header{
-
   max-width:1440px;
   height:4.5rem;
 
@@ -39,22 +38,22 @@ header .logo{
 }
 .header-nav ul li:nth-child(1){
   position:relative;
-}
-.header-nav ul li:nth-child(1):hover > .feat-navigation{
-  display:flex;
 
-  animation: drop-down 0.7s;
 }
+
 .feat-navigation{
   position:absolute;
-  left:-3rem;
+  left:-6.5rem;
   top:2.5rem;
+  z-index:1;
 
   background:#FFFFFF;
   padding:2.4rem 2.5rem;
 
   border-radius:1rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.199);
+
+  animation: drop-down 0.7s;
 }
 .feat-navigation ul{
   display:grid;
@@ -71,6 +70,30 @@ header .logo{
 .feat-navigation ul img{
   margin-right:1rem;
   width:12px;
+}
+
+
+.header-nav ul li:nth-child(2){
+  position:relative;
+}
+.header-nav ul li:nth-child(2):hover > .comp-navigation{
+  /*display:block; */
+
+  animation: drop-down 0.7s;
+}
+.comp-navigation{
+  position:absolute;
+  top:2.5rem;
+}
+.comp-navigation ul{
+  display:grid;
+  gap:1.2rem;
+
+  background:#FFFFFF;
+  padding:2.4rem 2.5rem;
+ 
+  border-radius:1rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.199);
 }
 
 

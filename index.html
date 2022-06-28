@@ -15,13 +15,14 @@
   <title>Snap-Task</title>
 </head>
 <body>
+  <script src="js/index.js" type="module"></script>
   <header>
       <img class="logo" src="/images/logo.svg">
       <img class="menu hide" src="/images/icon-menu.svg">
 
       <div class="header-nav">
         <ul>
-          <li>
+          <li class="feature-arrow">
             Features
              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
               <path stroke="var(--medium-gray-color)" 
@@ -39,7 +40,22 @@
 
           </li>
 
-          <li>Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="var(--medium-gray-color)" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></li>
+          <li class="company-arrow">
+            Company
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="var(--medium-gray-color)" stroke-width="1.5" 
+              fill="none" d="m1 1 4 4 4-4"/>
+            </svg>
+
+            <div class="comp-navigation hide" >
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            
+          </li>
           <li>Carrers</li>
           <li>About</li>
         </ul>
@@ -53,13 +69,7 @@
       <nav>
  
     
-        <div class="comp-navigation hide" >
-          <ul>
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
-          </ul>
-        </div>
+        
       </nav>
   </header>
 
