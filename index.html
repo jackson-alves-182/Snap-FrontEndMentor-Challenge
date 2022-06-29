@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/styles/general.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/mobile-menu.css">
 
   <title>Snap-Task</title>
 </head>
@@ -20,8 +21,12 @@
       <img class="logo" src="/images/logo.svg">
 
       <img class="menu-img hide" src="/images/icon-menu.svg">
+
       <div class="menu hide">
-        <img src="/images/icon-close-menu.svg">
+        <img id="close" src="/images/icon-close-menu.svg">
+        <div class="submenu">
+
+        </div>
       </div> 
 
       <div class="header-nav">
@@ -38,7 +43,7 @@
               fill="none" d="m1 5 4-4 4 4"/>
             </svg>
 
-            <div class="feat-navigation hide ">
+            <div class="feat-navigation hide">
               <ul>
                 <li><img src="/images/icon-todo.svg">Todo List</li>
                 <li><img src="/images/icon-calendar.svg">Calendar</li>
@@ -82,9 +87,6 @@
       </div>
 
       <nav>
- 
-    
-        
       </nav>
   </header>
 

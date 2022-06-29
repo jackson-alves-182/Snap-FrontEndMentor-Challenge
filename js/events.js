@@ -8,7 +8,9 @@ import{
   compDownArrow,
   compNavigation,
   featuresDropDown,
-  companyDropDown
+  companyDropDown,
+  menuNavigation,
+  closeMenu
 } from "./elements.js"
 
 export default function(){
@@ -38,7 +40,18 @@ export default function(){
       compDownArrow.classList.add('hide');
       compNavigation.classList.remove('hide');
     }
-
   })
 
+  menuNavigation.addEventListener('click', function(){
+    document.querySelector('.menu').classList.remove('hide');
+
+    const html = document.querySelector('.header-nav').innerHTML;
+
+    document.querySelector('.submenu').innerHTML += html;
+  })
+
+  closeMenu.addEventListener('click', function(){
+    document.querySelector('.menu').classList.add('hide');
+    document.querySelector('.submenu').innerHTML = "";
+  })
 }

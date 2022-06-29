@@ -11,6 +11,9 @@ const compNavigation = document.querySelector('.comp-navigation');
 const featuresDropDown = document.querySelector('.feat-navigation');
 const companyDropDown = document.querySelector('.comp-navigation');
 
+const menuNavigation = document.querySelector('.menu-img');
+const closeMenu = document.querySelector('#close');
+
 export {
   featureArrow,
   featUpArrow,
@@ -21,5 +24,7 @@ export {
   compDownArrow,
   compNavigation,
   featuresDropDown,
-  companyDropDown
+  companyDropDown,
+  menuNavigation,
+  closeMenu
 }

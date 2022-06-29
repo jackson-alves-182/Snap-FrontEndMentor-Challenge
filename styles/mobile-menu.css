@@ -1,0 +1,64 @@
+.menu ul{
+  display:flex;
+  align-items:center;
+  font-size:1.3rem;
+}
+.menu ul{
+  list-style:none;
+  white-space: nowrap;
+}
+
+.menu ul .feat-navigation{
+
+  position:absolute;
+  left:-6.5rem;
+  top:2.5rem;
+  z-index:1;
+
+  background:#FFFFFF;
+  padding:2.4rem 2.5rem;
+
+  border-radius:1rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.199);
+
+  animation: drop-down 0.7s;
+  
+}
+.menu ul li:nth-child(2):hover > .menu .comp-navigation{
+  display:none;
+}
+.menu .comp-navigation{
+  display:block;
+  position:static;
+  top:0;
+}
+.menu .comp-navigation ul{
+  display:grid;
+} 
+.menu{
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  left: 190px;
+  right: 0;
+  z-index: 1;
+
+  background:rgb(255, 255, 255);
+  box-shadow: -200px 3px 53px 92px rgba(0,0,0,0.51);
+
+  animation: right-navigation 0.8s;
+}
+.menu img{
+  position: absolute;
+  z-index:99;
+
+  top: 1rem;
+  right: 1rem;
+}
+.menu ul{
+  flex-direction:column;
+  margin-top:5rem;
+
+  font-size:2rem;
+}
