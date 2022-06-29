@@ -23,7 +23,7 @@ header .logo{
   justify-content:space-between;
   gap:1rem;
 }
-.header-nav ul,
+.header-nav > ul,
 .user-log{
   gap:clamp(0.5rem, 2.8vw, 4rem);
 }
@@ -36,12 +36,11 @@ header .logo{
   cursor:pointer;
   color:var(--almost-black-color);
 }
-.header-nav ul li:nth-child(1),
-.menu ul{
+.header-nav ul li:nth-child(1){
   position:relative;
 }
 
-.feat-navigation{
+.header-nav .feat-navigation{
 
   position:absolute;
   left:-6.5rem;
@@ -57,28 +56,28 @@ header .logo{
   animation: drop-down 0.7s;
   
 }
-.feat-navigation ul{
+.header-nav .feat-navigation ul{
   display:grid;
 
   align-items:center;
 
   gap:1.2rem;
 }
-.feat-navigation ul li{
+.header-nav .feat-navigation ul li{
   display:flex;
 
   align-items:center;
 }
-.feat-navigation ul img{
+.header-nav .feat-navigation ul img{
   margin-right:1rem;
   width:12px;
 }
 
-.feat-navigation[open]{
+.header-nav .feat-navigation[open]{
   display:block;
   animation: drop-down 0.7s;
 }
-.feat-navigation[close]{
+.header-nav .feat-navigation[close]{
   animation: drop-down-reverse 0.7s;
   display: none;
 }
@@ -87,12 +86,12 @@ header .logo{
   position:relative;
 }
 
-.comp-navigation{
+.header-nav .comp-navigation{
   position:absolute;
   top:2.5rem;
   animation: drop-down 0.7s;
 }
-.comp-navigation ul{
+.header-nav .comp-navigation ul{
   display:grid;
   gap:1.2rem;
 
