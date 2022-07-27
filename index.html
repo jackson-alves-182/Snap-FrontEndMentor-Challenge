@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/styles/general.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/mobile-menu.css">
+  <!--<link rel="stylesheet" href="/styles/mobile-menu.css"> -->
 
   <title>Snap-Task</title>
 </head>
@@ -24,24 +24,26 @@
 
       <div class="menu hide">
         <img id="close" src="/images/icon-close-menu.svg">
-        <div class="submenu">
 
-        </div>
-      </div> 
+      </div>
 
       <div class="header-nav">
         <ul>
           <li class="feature-arrow">
             Features
-             <svg class="feat-down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="var(--medium-gray-color)" 
-              stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
-            </svg>
+            <button class="feat-down-arrow">
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="var(--medium-gray-color)" 
+                stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+              </svg>
+            </button>
 
-            <svg class="feat-up-arrow hide" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#686868" stroke-width="1.5"
-              fill="none" d="m1 5 4-4 4 4"/>
-            </svg>
+            <button class="feat-up-arrow hide">
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5"
+                fill="none" d="m1 5 4-4 4 4"/>
+              </svg>
+            </button>
 
             <div class="feat-navigation hide">
               <ul>
@@ -56,16 +58,19 @@
 
           <li class="company-arrow">
             Company
-            <svg class="comp-down-arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="var(--medium-gray-color)" stroke-width="1.5" 
-              fill="none" d="m1 1 4 4 4-4"/>
-            </svg>
+            <button class="comp-down-arrow">
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="var(--medium-gray-color)" stroke-width="1.5" 
+                fill="none" d="m1 1 4 4 4-4"/>
+              </svg>
+            </button>
 
-            <svg class="comp-up-arrow hide" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#686868" stroke-width="1.5"
-              fill="none" d="m1 5 4-4 4 4"/>
-            </svg>
-            
+            <button class="comp-up-arrow hide">
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5"
+                fill="none" d="m1 5 4-4 4 4"/>
+              </svg>
+            </button>
 
             <div class="comp-navigation hide" >
               <ul>
@@ -81,8 +86,8 @@
         </ul>
 
         <div class="user-log">
-          <button>Login</button>
-          <button>Register</button>
+          <button id="login">Login</button>
+          <button id="register">Register</button>
         </div>
       </div>
 

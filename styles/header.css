@@ -32,6 +32,15 @@ header .logo{
   list-style:none;
   white-space: nowrap;
 }
+
+.feature-arrow button,
+.menu-feat button,
+.company-arrow button{
+  cursor:pointer;
+
+  border:none;
+  background:transparent;
+}
 .header-nav ul li:hover{
   cursor:pointer;
   color:var(--almost-black-color);
@@ -41,7 +50,6 @@ header .logo{
 }
 
 .header-nav .feat-navigation{
-
   position:absolute;
   left:-6.5rem;
   top:2.5rem;
@@ -143,7 +151,120 @@ header .logo{
   }
   .header-nav{
     display: none;
+  } 
+
+  .menu{
+    position: fixed;
+  
+    top: 0;
+    bottom: 0;
+    left: 190px;
+    right: 0;
+    z-index: 1;
+  
+    background:#FFFFFF;
+    box-shadow: -200px 3px 53px 92px rgba(0,0,0,0.51);
+  
+    animation: right-navigation 0.8s;
   }
+  .menu #close{
+    position: absolute;
+  
+    top: 1rem;
+    right: 1rem;
+  }
+  .header-nav{
+    position:relative;
+    z-index: 5;
+  
+    margin:3rem 0 0 2rem;
+  
+  }
+  .header-nav ul{ 
+    position:relative;
+    
+    margin:0 0 0 2rem;
+  
+    list-style:none;
+  
+    display:flex;
+    flex-direction:column;
+  
+  
+    font-size:1.6rem;
+    white-space: nowrap;
+  }
+  .header-nav > ul{ 
+    gap:2rem;
+  }
+  .header-nav > ul li:last-child{ 
+    margin-bottom:3rem;
+  }
+  
+  .header-nav ul li{
+    margin-top:0rem;
+  }
+  
+  .header-nav .feat-navigation,
+  .header-nav .comp-navigation{
+    background:rgba(255, 255, 255, 0);
+  }
+  .header-nav .comp-navigation ul{
+    background:#ffffff00;
+    padding:0px;
+
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  .header-nav .feat-navigation ul li,
+  .header-nav .comp-navigation ul li{
+    width:10rem;
+  
+    display:flex;
+    align-items:center;
+  }
+  .header-nav .feat-navigation ul li img,
+  .header-nav .comp-navigation ul li img{
+    width:17px;
+    height:18px;
+  }
+  .header-nav .feat-navigation ul li p,
+  .header-nav .comp-navigation ul li p{
+    width:60px;
+    font-size:1.6rem;
+  }
+  .header-nav ul .feat-navigation,
+  .header-nav ul .comp-navigation{
+    position:static;
+    left:0rem;
+    top:0rem;
+  
+    padding:0;
+  
+    border-radius:0;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  
+    animation: drop-down 0.7s;
+    
+  }
+  .header-nav .feat-navigation ul li,
+  .header-nav .comp-navigation ul li{
+    margin-top:1rem;
+  }
+  .header-nav .feat-navigation ul li:last-child,
+  .header-nav .comp-navigation ul li:last-child{
+    margin-bottom:1rem;
+  }
+  
+  .header-nav .user-log{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .header-nav .user-log button:nth-child(2){
+    width:180px;
+  }
+  
+
 }
 
 @keyframes drop-down {

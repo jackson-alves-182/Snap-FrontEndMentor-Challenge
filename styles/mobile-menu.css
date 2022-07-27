@@ -14,17 +14,20 @@
 }
 .menu #close{
   position: absolute;
-  z-index:99;
 
   top: 1rem;
   right: 1rem;
 }
 .submenu{
+  position:relative;
+  z-index: 5;
+
   margin:3rem 0 0 2rem;
+
 }
 .submenu ul{ 
   position:relative;
-
+  
   margin:0 0 0 2rem;
 
   list-style:none;

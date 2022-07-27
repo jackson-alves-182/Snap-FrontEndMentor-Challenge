@@ -7,15 +7,16 @@ import{
   compUpArrow,
   compDownArrow,
   compNavigation,
-  featuresDropDown,
-  companyDropDown,
   menuNavigation,
-  closeMenu
+  closeMenu,
+  buttonLogin
 } from "./elements.js"
 
 export default function(){
-  featureArrow.addEventListener('click', function(){
 
+  const navHeader = document.querySelector('.header-nav');
+  
+  featureArrow.addEventListener('click', function(){
     if(featDownArrow.classList.contains('hide')){
       featUpArrow.classList.add('hide');
       featDownArrow.classList.remove('hide');
@@ -27,7 +28,9 @@ export default function(){
       featDownArrow.classList.add('hide');
     }
   })
-  
+
+
+
   companyArrow.addEventListener('click', function(){
 
     if(compDownArrow.classList.contains('hide')){
@@ -42,16 +45,23 @@ export default function(){
     }
   })
 
+  
   menuNavigation.addEventListener('click', function(){
+    navHeader.style.display = "flex";
+
     document.querySelector('.menu').classList.remove('hide');
-
-    const html = document.querySelector('.header-nav').innerHTML;
-
-    document.querySelector('.submenu').innerHTML += html;
+    document.querySelector('.menu').appendChild(navHeader);
   })
+ 
+  
 
   closeMenu.addEventListener('click', function(){
+    navHeader.style.display = "";
+    
+    document.querySelector('header').appendChild(navHeader);
     document.querySelector('.menu').classList.add('hide');
-    document.querySelector('.submenu').innerHTML = "";
   })
+
+  buttonLogin.addEventListener('click', function(){
+  } )
 }
