@@ -137,6 +137,11 @@ header .logo{
 }
 
 @media(max-width:560px){
+  .header-nav,
+  .header-nav > ul{
+    align-items:baseline;
+}
+  
   header{
     position: relative;
   }
@@ -178,6 +183,7 @@ header .logo{
     z-index: 5;
   
     margin:3rem 0 0 2rem;
+    align-items:baseline;
   
   }
   .header-nav ul{ 
@@ -190,7 +196,7 @@ header .logo{
     display:flex;
     flex-direction:column;
   
-  
+
     font-size:1.6rem;
     white-space: nowrap;
   }
