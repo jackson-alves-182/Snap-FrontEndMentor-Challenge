@@ -156,6 +156,15 @@ header .logo{
   }
   .header-nav{
     display: none;
+
+    position:relative;
+    z-index: 5;
+  
+    margin:3rem 0 0 2rem;
+    align-items:baseline;
+  
+    flex-direction:column;
+    justify-content:unset;
   } 
 
   .menu{
@@ -177,14 +186,6 @@ header .logo{
   
     top: 1rem;
     right: 1rem;
-  }
-  .header-nav{
-    position:relative;
-    z-index: 5;
-  
-    margin:3rem 0 0 2rem;
-    align-items:baseline;
-  
   }
   .header-nav ul{ 
     position:relative;
